@@ -44,6 +44,7 @@
     height: 100px;
   }
 }
+
 @media (max-width: 900px) {
   .services-bodydiv h3 {
     text-align: center;
