@@ -197,18 +197,6 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column-reverse;
   }
-
-  .cargo-body .cargo-button {
-    background: whitesmoke;
-    width: 222px;
-    margin: 20px auto;
-  }
-  .cargo-body .cargo-button .package {
-    width: 110px;
-  }
-  .cargo-body .cargo-button .total {
-    width: 110px;
-  }
   .details-top form .switch {
     margin: auto;
   }
