@@ -97,7 +97,7 @@ h3 {
   font-size: 13px;
   margin-top: 12px;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .footer .footer-bottom form div h3 {
   margin-top: 0px;
@@ -129,6 +129,10 @@ h3 {
   .footer .footer-bottom form {
     margin: auto;
     width: 95%;
+  }
+
+  .footer .footer-bottom form div p {
+    margin-left: 20px;
   }
 
   .switches {

@@ -200,7 +200,7 @@ input:checked + .slider:before {
 
   .cargo-body .cargo-button {
     background: whitesmoke;
-    width: 220px;
+    width: 222px;
     margin: 20px auto;
   }
   .cargo-body .cargo-button .package {
