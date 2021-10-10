@@ -40,11 +40,10 @@
     border: none;
     outline: none;
     padding-left: 9px;
-    -webkit-appearance: none;
   }
 
   .header .header-search form div input::placeholder {
-    color: #728aa1;
+    color: #223f5a;
   }
 
   .body .body-form form div i {
