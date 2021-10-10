@@ -81,6 +81,7 @@
 
 .body .body-top .body-container .body-information p {
   color: gray;
+  margin-left: -7px;
 }
 .body .body-top .body-container .body-arrow i {
   margin-top: 27px;
