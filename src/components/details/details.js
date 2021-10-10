@@ -10,11 +10,14 @@ const Details = () => {
         <div className='details-top'>
           <h2>Cargo Details</h2>
           <form>
-            <label className='switch'>
+            <label className='switch' id='cargo'>
               <input type='checkbox' />
               <span className='slider round'></span>
             </label>
-            <p> Dangerous Cargo (ex Chemicals, Battery)</p>
+            <p>
+              {' '}
+              <span>Dangerous Cargo</span> (ex. Chemicals, Battery)
+            </p>
           </form>
         </div>
         <div className='cargo-body'>
@@ -37,16 +40,32 @@ const Details = () => {
             </button>
           </div>
         </div>
-        <div className='cargo-input'>
-          <label>
-            <p>Test Volume</p>
-            <input placeholder='cbm' />
-          </label>
-          <label>
-            <p>Total Weight</p>
-            <input placeholder='kg' />
-          </label>
-        </div>
+        {select === 'total' ? (
+          <div className='cargo-input'>
+            <fieldset>
+              <legend>Total Volume</legend>
+              <input placeholder='cbm' />
+            </fieldset>
+            <br />
+
+            <fieldset>
+              <legend>Total Weight</legend>
+              <input placeholder='kg' />
+            </fieldset>
+          </div>
+        ) : (
+          <div className='cargo-input'>
+            <fieldset>
+              <legend>Total Width</legend>
+              <input placeholder='cm' />
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Total Height</legend>
+              <input placeholder='cm' />
+            </fieldset>
+          </div>
+        )}
       </div>
     </div>
   )

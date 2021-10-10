@@ -1,0 +1,143 @@
+/* The switch - the box around the slider */
+.switches {
+  position: relative;
+  display: inline-block;
+  width: 49px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0c57a1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0c57a1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* other styles */
+
+h3 {
+  font-size: 19px;
+}
+
+.footer {
+  width: 80%;
+  background: white;
+  margin: 30px auto;
+  padding: 40px 0;
+}
+
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  position: relative;
+  top: 40%;
+  margin: auto;
+}
+
+.footer .footer-bottom form {
+  width: 48%;
+  display: flex;
+}
+
+.footer .footer-bottom form div {
+  width: 100%;
+}
+
+.footer .footer-bottom form div p {
+  font-size: 13px;
+  margin-top: 12px;
+  text-align: left;
+  margin-left: 30px;
+}
+.footer .footer-bottom form div h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.foot-header {
+  text-align: left;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.foot-header h3 {
+  font-size: 19px;
+  font-size: 700;
+}
+
+@media (max-width: 900px) {
+  .foot-header {
+    margin: auto;
+  }
+  .footer .footer-bottom {
+    flex-direction: column;
+  }
+  .footer .footer-bottom form {
+    margin: auto;
+    width: 95%;
+  }
+
+  .switches {
+    width: 44px;
+    height: 20px;
+  }
+
+  .slider:before {
+    width: 10px;
+    height: 13px;
+  }
+}

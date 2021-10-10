@@ -1,81 +1,67 @@
-.card {
-  background: white;
+.services-div {
   width: 80%;
   margin: auto;
-  padding-bottom: 35px;
+  background-color: white;
+  border-radius: 5px;
 }
-
-.card-header {
-  text-align: left;
+.services-bodydiv {
   width: 90%;
   margin: auto;
-  border: white 1px solid;
+  text-align: left;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
-.card-header h3 {
-  margin: 20px 0;
+.services-bodydiv h3 {
+  font-size: 19px;
+  font-size: 700;
 }
-
-.card .cards {
-  width: 94%;
-  margin: auto;
+.four-divs {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.card .cards .air {
-  background: #0c57a1;
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
+.mini-div {
+  width: 22.5%;
   height: 80px;
-  border-radius: 5px;
-  min-width: 200px;
-}
-
-.card .cards .air i {
-  color: white;
-  font-size: 35px;
-  position: relative;
-  bottom: 0;
-  top: 68%;
-}
-
-.card .cards .air p {
-  color: white;
-  margin: auto;
-}
-
-.card .cards .sea {
-  background: white;
+  border: 1px solid grey;
   display: flex;
-  justify-content: space-between;
-  width: 200px;
-  height: 80px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  min-width: 200px;
   position: relative;
-  margin: 20px;
   overflow: hidden;
+  margin: 9px;
+  border-radius: 5px;
 }
-
-.card .cards .sea i {
+@media (max-width: 1190px) {
+  .mini-div {
+    width: 46%;
+    height: 100px;
+  }
+}
+@media (max-width: 740px) {
+  .mini-div {
+    width: 43%;
+    height: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .services-bodydiv h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .mini-div {
+    width: 100%;
+    height: 100px;
+  }
+}
+.mini-div i {
   color: gray;
-  font-size: 45px;
+  font-size: 50px;
   position: absolute;
-  bottom: 0;
-  top: 50%;
-  left: 80%;
+  right: -7%;
+  bottom: 0%;
 }
-
-.card .cards .sea p {
-  width: 120px;
-}
-
-.card .cards .sea,
-.custom p {
-  color: black;
-  margin: auto;
+p {
+  padding-left: 10px;
 }

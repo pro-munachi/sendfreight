@@ -11,6 +11,11 @@
   margin: 0 auto;
 }
 
+.layout-info i {
+  font-size: 19px;
+  font-size: 700;
+}
+
 .location {
   width: 90%;
   display: flex;
@@ -34,7 +39,6 @@
 
 .from,
 .to {
-  width: 34%;
   position: relative;
   margin: 15px 0;
 }
@@ -48,9 +52,9 @@
 
 .from input,
 .to input {
-  width: 90%;
+  width: 280px;
   outline: none;
-  background: rgb(240, 234, 234);
+  background: whitesmoke;
   border: none;
   height: 30px;
   padding-left: 25px;
@@ -58,26 +62,25 @@
 
 .date,
 .number {
-  width: 30%;
   position: relative;
   margin: 15px 0;
 }
 
 .date input {
-  width: 95%;
+  width: 280px;
   outline: none;
-  background: rgb(240, 234, 234);
+  background: whitesmoke;
   border: none;
   height: 30px;
   padding-left: 29px;
 }
 
 .number input {
-  width: 95%;
+  width: 280px;
   outline: none;
-  background: rgb(240, 234, 234);
+  background: whitesmoke;
   border: none;
-  height: 30px;
+  height: 32px;
   padding-left: 10px;
 }
 
@@ -88,15 +91,88 @@
 }
 
 .select {
-  width: 30%;
   margin: 15px 0;
 }
 
 .select select {
-  width: 95%;
+  width: 280px;
   outline: none;
-  background: rgb(240, 234, 234);
+  background: whitesmoke;
   border: none;
   height: 32px;
   padding-left: 8px;
+  color: gray;
+}
+
+.select select option {
+  width: 70px;
+}
+
+@media (max-width: 1245px) {
+  .select select {
+    width: 307px;
+  }
+  .number input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .location {
+    flex-direction: column;
+  }
+
+  .from,
+  .to {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .from input,
+  .to input {
+    height: 45px;
+    width: 95%;
+    padding-left: 40px;
+  }
+  .date,
+  .number {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .date input {
+    height: 45px;
+    width: 95%;
+    padding-left: 40px;
+  }
+
+  .number input {
+    height: 45px;
+    width: 98%;
+  }
+
+  .select select {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 50px;
+  }
+
+  .from i,
+  .to i {
+    left: 3%;
+    top: 33%;
+  }
+
+  .layout-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 805px) {
+  .layout-info {
+    text-align: center;
+    margin: 20px;
+  }
 }

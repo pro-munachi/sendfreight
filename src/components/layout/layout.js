@@ -15,11 +15,11 @@ const Layout = () => {
           </div>
           <label className='from'>
             <i className='fas fa-map-marker-alt'></i>
-            <input type='text' placeholder='From: city or port' />
+            <input type='text' placeholder='From city or port' />
           </label>
           <label className='to'>
             <i className='fas fa-map-marker-alt'></i>
-            <input type='text' placeholder='to: city or port' />
+            <input type='text' placeholder='To city or port' />
           </label>
           <label className='date'>
             <i className='fas fa-calendar'></i>
@@ -27,8 +27,8 @@ const Layout = () => {
           </label>
           <label className='select'>
             <select name='incoterms'>
-              <option value='incoterm'>incoterm</option>
-              <option value='saab'>Saab</option>
+              <option value='incoterm'>Incoterm</option>
+              <option value='saab'>Send Freight</option>
             </select>
           </label>
           <label className='number'>

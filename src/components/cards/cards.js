@@ -1,41 +1,37 @@
 import { React, useState } from 'react'
-import List from './cardlist'
 import './cards.css'
+import List from './cardlist'
 
-const Cards = () => {
-  const [select, setSelect] = useState('Air')
+const Services = () => {
+  const [select, setSelect] = useState('Air Freight')
   return (
-    <div className='card'>
-      <div className='card-header'>
+    <div className='services-div'>
+      <div className='services-bodydiv'>
         <h3>Select a service</h3>
-      </div>
-      <div className='card-design'>
-        <div className='cards'>
+        <div className='four-divs'>
           {List.map((item) => {
             return (
               <div
-                className='sea'
+                className='mini-div'
                 key={item.id}
                 style={{
-                  background: select === item.name ? '#0c57a1' : 'white',
+                  background: select === item.name ? '#0747a6' : 'white',
                 }}
                 onClick={() => {
                   setSelect(item.name)
                 }}
               >
-                <p
-                  style={{
-                    color: select === item.name ? 'white' : 'black',
-                  }}
-                >
+                <p style={{ color: select === item.name ? 'white' : 'black' }}>
                   {item.name}
+                  <br />
+                  {item.names}
                 </p>
                 <i
                   className={item.image}
-                  style={{
-                    color: select === item.name ? 'white' : 'gray',
-                  }}
-                ></i>
+                  style={{ color: select === item.name ? 'white' : 'grey' }}
+                >
+                  {' '}
+                </i>
               </div>
             )
           })}
@@ -45,4 +41,4 @@ const Cards = () => {
   )
 }
 
-export default Cards
+export default Services

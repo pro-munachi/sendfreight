@@ -2,24 +2,80 @@
   width: 100%;
   /* background: rgb(245, 239, 239); */
   background: whitesmoke;
+  padding-bottom: 15%;
+}
+
+.body .body-form {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .body .body-form {
+    display: block;
+    width: 90%;
+    height: 70px;
+  }
+  .body .body-form form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .body .body-form div {
+    width: 70%;
+    margin-left: 46px;
+  }
+
+  .body .body-form form div {
+    position: relative;
+    top: 30%;
+    margin: auto;
+    width: 90%;
+  }
+  .body .body-form form div input {
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    background: #8ea8c2;
+    color: #223f5a;
+    border: none;
+    outline: none;
+    padding-left: 9px;
+  }
+
+  .header .header-search form div input::placeholder {
+    color: #728aa1;
+  }
+
+  .body .body-form form div i {
+    position: absolute;
+    right: 3%;
+    top: 27%;
+    cursor: pointer;
+  }
 }
 
 .body .body-top {
   display: flex;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 7px;
 }
 
 .body .body-top .body-container {
   display: flex;
   margin-top: 3px;
-  margin-left: 80px;
 }
 
 .body .body-top .body-container .body-information {
   text-align: left;
   margin-left: 30px;
   margin-top: 0;
+  width: 80%;
 }
 
+.body .body-top .body-container .body-information p {
+  color: gray;
+}
 .body .body-top .body-container .body-arrow i {
   margin-top: 27px;
   font-weight: 700;
