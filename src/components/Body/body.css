@@ -54,6 +54,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  .body .body-top {
+    width: 95%;
+  }
+}
+
 .body .body-top {
   display: flex;
   width: 90%;

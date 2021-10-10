@@ -186,6 +186,12 @@ input:checked + .slider:before {
   }
 }
 
+@media (max-width: 700px) {
+  .details {
+    width: 95%;
+  }
+}
+
 @media (max-width: 500px) {
   .details-top form {
     display: flex;

@@ -141,3 +141,9 @@ h3 {
     height: 13px;
   }
 }
+
+@media (max-width: 700px) {
+  .footer {
+    width: 95%;
+  }
+}
