@@ -1,0 +1,102 @@
+.layout {
+  width: 80%;
+  background: white;
+  margin: 30px auto;
+  padding: 40px 0;
+}
+
+.layout-info {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.location {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 6px auto;
+  flex-wrap: wrap;
+}
+
+.location-import {
+  margin: 15px 0;
+}
+
+.import,
+.export {
+  background: transparent;
+  height: 35px;
+  width: 65px;
+  border: 0.5px solid rgb(240, 234, 234);
+  cursor: pointer;
+}
+
+.from,
+.to {
+  width: 34%;
+  position: relative;
+  margin: 15px 0;
+}
+
+.from i,
+.to i {
+  position: absolute;
+  left: 3%;
+  top: 27%;
+}
+
+.from input,
+.to input {
+  width: 90%;
+  outline: none;
+  background: rgb(240, 234, 234);
+  border: none;
+  height: 30px;
+  padding-left: 25px;
+}
+
+.date,
+.number {
+  width: 30%;
+  position: relative;
+  margin: 15px 0;
+}
+
+.date input {
+  width: 95%;
+  outline: none;
+  background: rgb(240, 234, 234);
+  border: none;
+  height: 30px;
+  padding-left: 29px;
+}
+
+.number input {
+  width: 95%;
+  outline: none;
+  background: rgb(240, 234, 234);
+  border: none;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.date i {
+  position: absolute;
+  left: 3%;
+  top: 24%;
+}
+
+.select {
+  width: 30%;
+  margin: 15px 0;
+}
+
+.select select {
+  width: 95%;
+  outline: none;
+  background: rgb(240, 234, 234);
+  border: none;
+  height: 32px;
+  padding-left: 8px;
+}

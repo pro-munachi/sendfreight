@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #0c57a1;
+  height: 80px;
+}
+
+.header .header-search {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.header .header-search p {
+  margin: auto 0 auto 40px;
+}
+
+.header .header-search p .send {
+  font-size: 22px;
+}
+
+.header .header-search p .freight {
+  text-transform: uppercase;
+}
+
+.header .header-search form {
+  width: 100%;
+  height: 100%;
+}
+
+.header .header-search form div {
+  position: relative;
+  top: 30%;
+  margin: auto;
+}
+.header .header-search form div input {
+  margin: auto;
+  width: 400px;
+  height: 30px;
+  background: #8ea8c2;
+  border: none;
+  outline: none;
+  padding-left: 9px;
+}
+
+.header .header-search form div i {
+  position: absolute;
+  right: 3%;
+  top: 27%;
+}
+
+.header .header-button {
+  width: 40%;
+  height: 100%;
+}
+
+.header .header-button .buttons {
+  margin: auto;
+  height: 100%;
+  width: 54%;
+  float: right;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-button .buttons .request {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  height: 40px;
+  width: 120px;
+  position: relative;
+  top: 25%;
+  border-radius: 5px;
+}
+
+.header .header-button .buttons .book {
+  background: rgb(71, 158, 71);
+  border: none;
+  color: white;
+  height: 40px;
+  width: 120px;
+  position: relative;
+  top: 25%;
+  border-radius: 5px;
+}

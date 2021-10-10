@@ -1,10 +1,12 @@
-import logo from './logo.svg'
 import './App.css'
+import Header from './components/header/header'
+import Body from './components/Body/body'
 
 function App() {
   return (
     <div className='App'>
-      <p>muna</p>
+      <Header />
+      <Body />
     </div>
   )
 }

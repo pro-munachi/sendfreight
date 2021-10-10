@@ -1,0 +1,26 @@
+.body {
+  width: 100%;
+  /* background: rgb(245, 239, 239); */
+  background: whitesmoke;
+}
+
+.body .body-top {
+  display: flex;
+}
+
+.body .body-top .body-container {
+  display: flex;
+  margin-top: 3px;
+  margin-left: 80px;
+}
+
+.body .body-top .body-container .body-information {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.body .body-top .body-container .body-arrow i {
+  margin-top: 27px;
+  font-weight: 700;
+}
