@@ -42,7 +42,7 @@
     padding-left: 9px;
   }
 
-  .header .header-search form div input::placeholder {
+  .body .body-form form div input::-webkit-input-placeholder {
     color: #223f5a;
   }
 
